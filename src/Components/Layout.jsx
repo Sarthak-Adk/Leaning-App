@@ -46,7 +46,7 @@ const Layout = () => {
                 alt="User"
                 className="w-8 h-8 rounded-full"
               />
-              <span className="font-medium">Tom Cook</span>
+              <span className="font-medium">Sarthak</span>
             </div>
           </div>
         </header>
