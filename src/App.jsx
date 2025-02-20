@@ -1,10 +1,11 @@
-// src/App.jsx
+
 import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./Components/LandingPage";
 import Layout from "./Components/Layout";
 import Dashboard from "./Pages/Dashboard";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
 
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="courses" element={<Courses/>}/>
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact/>}/>
         <Route path="projects" element={<Projects />} />
       </Route>
 

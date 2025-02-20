@@ -12,7 +12,7 @@ const Layout = () => {
       <aside className="bg-white w-64 h-full border-r shadow-md">
         <div className="flex items-center justify-center py-[23px] border-b">
           <h1 className="text-lg font-bold text-blue-600 cursor-pointer" onClick={() => navigate("/")}>
-            My Logo
+            Lean Code
           </h1>
         </div>
 
@@ -22,6 +22,7 @@ const Layout = () => {
           <SidebarNavLink to="courses">Courses</SidebarNavLink>
           <SidebarNavLink to="projects">Projects</SidebarNavLink>
           <SidebarNavLink to="about">About</SidebarNavLink>
+          <SidebarNavLink to="contact">Contact</SidebarNavLink>
            </nav>
       </aside>
 
