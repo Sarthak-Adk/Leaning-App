@@ -31,12 +31,12 @@ const Layout = () => {
 
         {/* Navigation */}
         <nav className="p-4 space-y-2">
-          <SidebarNavLink to="dashboard"><RiDashboardFill />Dashboard</SidebarNavLink>
-          <SidebarNavLink to="courses"><FaBookOpen />Courses</SidebarNavLink>
-          <SidebarNavLink to="projects"><GoProjectRoadmap />Projects</SidebarNavLink>
-          <SidebarNavLink to="about"><RiTeamFill />About</SidebarNavLink>
-          <SidebarNavLink to="contact"><MdContactPhone />Contact</SidebarNavLink>
-          <SidebarNavLink to="logout"><IoLogOut />Log Out</SidebarNavLink>
+          <SidebarNavLink to="dashboard"><RiDashboardFill className="mx-1"/>Dashboard</SidebarNavLink>
+          <SidebarNavLink to="courses"><FaBookOpen className="mx-1"/>Courses</SidebarNavLink>
+          <SidebarNavLink to="projects"><GoProjectRoadmap className="mx-1"/>Projects</SidebarNavLink>
+          <SidebarNavLink to="about"><RiTeamFill className="mx-1"/>About</SidebarNavLink>
+          <SidebarNavLink to="contact"><MdContactPhone className="mx-1"/>Contact</SidebarNavLink>
+          <SidebarNavLink to="logout"><IoLogOut className="mx-1"/>Log Out</SidebarNavLink>
         </nav>
       </aside>
 

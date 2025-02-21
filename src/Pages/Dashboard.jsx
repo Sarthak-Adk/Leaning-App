@@ -14,8 +14,8 @@ const skillsData = [
 ];
 
 const funnelData = [
-    { label: 'JavaScript', value: 4562 }, { label: 'Python', value: 2562 },
-    { label: 'React', value: 1262 }, { label: 'Java', value: 1000 },
+    { label: 'Python', value: 4562 }, { label: 'JavaScript', value: 2562 },
+    { label: 'Java', value: 2262 }, { label: 'C', value: 2100 },
 ];
 
 const categoryData = [
