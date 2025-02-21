@@ -19,7 +19,7 @@ const Layout = () => {
           sidebarOpen ? "translate-x-0" : "-translate-x-64"
         } md:block`}
       >
-        <div className="flex items-center justify-between px-20 py-5">
+        <div className="flex items-center justify-between px-6 py-5">
           <h1 className="text-lg font-bold text-blue-600 cursor-pointer" onClick={() => navigate("/")}>
             Lean Code
           </h1>
@@ -43,14 +43,14 @@ const Layout = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
-        <header className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-          {/* Hamburger menu button */}
+        <header className="bg-white shadow-md px-6 py-4 flex justify-between md:justify-end items-center space-x-4">
+          {/* Hamburger menu button (Mobile) */}
           <button className="md:hidden text-gray-700" onClick={() => setSidebarOpen(true)}>
             <HiMenu className="text-2xl" />
           </button>
 
-          {/* Search Bar */}
-          <div className="relative w-full max-w-xs hidden sm:block">
+          {/* Search Bar (Hidden on small screens, visible on md and above) */}
+          <div className="relative hidden md:block flex-grow max-w-sm">
             <input
               type="text"
               placeholder="Search"
@@ -62,7 +62,8 @@ const Layout = () => {
           {/* Notification & User Info */}
           <div className="flex items-center space-x-4">
             <HiBell className="text-gray-600 text-xl cursor-pointer" />
-            <div className="flex items-center space-x-2 mr-8">
+            
+            <div className="flex items-center space-x-2">
               <img
                 src="https://randomuser.me/api/portraits/men/1.jpg"
                 alt="User"
