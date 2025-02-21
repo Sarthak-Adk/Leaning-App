@@ -12,7 +12,7 @@ const About = () => {
      <img alt="A group of diverse people in a meeting, discussing and smiling" class="w-full h-auto rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/wVwbUKJGIRPfR3-3kO5IE5wa_8fIQVRcRYRIoOhV0kk.jpg" width="600"/>
     </div>
     <div class="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
-     <div class="bg-pink-100 p-6 rounded-lg shadow-lg mb-8">
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg mb-8">
       <h2 class="text-xl font-bold mb-4">
        Why We Do This
       </h2>

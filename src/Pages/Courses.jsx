@@ -70,8 +70,8 @@ const Courses = () => {
 
   return (
     <>
-     <section className="bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
+     <section className="bg-white">
+    <div className="container mx-auto px-4 py-8">
      <h2 className="text-3xl font-bold text-center">Our Courses</h2>
     <div className="container mx-auto px-4 py-8"> {/* Container for centering and padding */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"> {/* Grid layout */}
