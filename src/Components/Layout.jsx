@@ -19,7 +19,7 @@ const Layout = () => {
           sidebarOpen ? "translate-x-0" : "-translate-x-64"
         } md:block`}
       >
-        <div className="flex items-center justify-between px-6 py-5">
+        <div className="flex items-center justify-between px-18 py-5">
           <h1 className="text-lg font-bold text-blue-600 cursor-pointer" onClick={() => navigate("/")}>
             Lean Code
           </h1>
@@ -50,6 +50,9 @@ const Layout = () => {
           </button>
 
           {/* Search Bar (Hidden on small screens, visible on md and above) */}
+   
+
+
           <div className="relative hidden md:block flex-grow max-w-sm">
             <input
               type="text"
@@ -69,7 +72,7 @@ const Layout = () => {
                 alt="User"
                 className="w-8 h-8 rounded-full"
               />
-              <span className="font-medium hidden sm:inline">Sarthak</span>
+              <span className="font-medium hidden sm:inline mr-12">Sarthak</span>
             </div>
           </div>
         </header>

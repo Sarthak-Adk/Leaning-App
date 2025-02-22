@@ -1,67 +1,86 @@
-import React from 'react';
+import React from "react";
+import ProjectCard from "../Components/ProjectCard";
 
-const Project = ({ title, description, imageSrc, technologies }) => {
-  return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-6"> {/* Card styling */}
-      <div className="flex flex-col md:flex-row md:items-center"> {/* Responsive layout */}
-        {imageSrc && ( // Conditionally render image if available
-          <div className="md:w-48 md:mr-6 mb-4 md:mb-0"> {/* Image container */}
-            <img
-              src={imageSrc}
-              alt={title}
-              className="rounded-lg object-cover w-full h-32 md:h-full" // Responsive image sizing
-            />
-          </div>
-        )}
-        <div>
-          <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <p className="text-gray-700 mb-4">{description}</p>
-          {technologies && ( // Conditionally render technologies if available
-            <div className="flex flex-wrap">
-              {technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-gray-200 rounded-md px-2 py-1 mr-2 mb-2 text-sm"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
+const projectsData = [
+  {
+    id: 1,
+    title: "To-Do List App",
+    description: "A simple task manager using React and Firebase.",
+    level: "Beginner",
+    techStack: ["React", "Firebase"],
+    status: "Not Started",
+  },
+  {
+    id: 2,
+    title: "Weather App",
+    description: "Fetch live weather data using OpenWeather API.",
+    level: "Intermediate",
+    techStack: ["JavaScript", "API", "Bootstrap"],
+    status: "In Progress",
+  },
+  {
+    id: 3,
+    title: "E-commerce Website",
+    description: "A full-stack e-commerce platform with payment integration.",
+    level: "Advanced",
+    techStack: ["React", "Node.js", "MongoDB"],
+    status: "Completed",
+  },
+  {
+    id: 4,
+    title: "Chat Application",
+    description: "A real-time chat app using WebSockets and Node.js.",
+    level: "Intermediate",
+    techStack: ["React", "Node.js", "Socket.io"],
+    status: "Not Started",
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    description: "A personal portfolio website to showcase projects and skills.",
+    level: "Beginner",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    status: "Completed",
+  },
+  {
+    id: 6,
+    title: "Expense Tracker",
+    description: "Track daily expenses and generate reports.",
+    level: "Intermediate",
+    techStack: ["React", "Redux", "Firebase"],
+    status: "In Progress",
+  },
+  {
+    id: 7,
+    title: "Social Media Dashboard",
+    description: "A dashboard for managing social media accounts.",
+    level: "Advanced",
+    techStack: ["React", "Next.js", "Tailwind CSS"],
+    status: "Not Started",
+  },
+];
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Project 1',
-      description: 'A brief description of project 1. What problem does it solve? What technologies were used?',
-      imageSrc: '/path/to/project1.jpg', // Replace with your image path
-      technologies: ['React', 'Tailwind CSS', 'Node.js'],
-    },
-    {
-      title: 'Project 2',
-      description: 'Details about project 2.  Highlight key features and accomplishments.',
-      imageSrc: '/path/to/project2.png',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-    },
-    // Add more projects here
-  ];
-
   return (
-    <section className="py-12 bg-white"> {/* Section styling */}
-      <div className="container mx-auto px-4"> {/* Container for centering */}
-        <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Responsive grid */}
-          {projects.map((project) => (
-            <Project key={project.title} {...project} />
-          ))}
-        </div>
-      </div>
-    </section>
+  <>
+   <section className="bg-white">
+    <div className="container mx-auto px-4 py-8">
+     <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
+     {projectsData.map(pCard=>(
+      <ProjectCard
+       key={pCard.id}
+       title={pCard.title}
+       description={pCard.description}
+       level={pCard.level}
+       techStack={pCard.techStack}
+       status={pCard.status} />
+     )
+    )}
+    </div>
+     </div>
+     </section>
+  </>
   );
 };
 

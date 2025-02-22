@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CoursesCard = ({ image, title, description, link }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition duration-300 hover:scale-105 flex flex-col h-full"> {/* h-full for consistent card heights */}
+    <div className="bg-white border border-gray-200 rounded-lg shadow-md shadow-blue-500/50 overflow-hidden transition duration-300 hover:scale-105 flex flex-col h-full"> {/* h-full for consistent card heights */}
       <img className="w-full h-48 object-cover" src={image} alt={title} />
 
       <div className="p-6 flex flex-col flex-grow">
