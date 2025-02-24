@@ -21,7 +21,7 @@ const Layout = () => {
       >
         <div className="flex items-center justify-between px-18 py-5">
           <h1 className="text-lg font-bold text-blue-600 cursor-pointer" onClick={() => navigate("/")}>
-            Lean Code
+            Learn Code
           </h1>
           {/* Close button on Mobile */}
           <button className="md:hidden text-gray-700" onClick={() => setSidebarOpen(false)}>
