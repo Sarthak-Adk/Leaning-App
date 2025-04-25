@@ -7,6 +7,9 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
+import LogIn from "./Pages/LogIn";
+import SignUp from "./Pages/SignUp";
+
 
 
 const App = () => {
@@ -14,7 +17,9 @@ const App = () => {
     <Routes>
     {/* Landing Page */}
     <Route path="/" element={<LandingPage />} />
-  
+    <Route path="login" element={<LogIn/>}/>
+    <Route path="signup" element={<SignUp/>}/>
+
     {/* Layout with Nested Routes */}
     <Route path="/layout" element={<Layout />}>
       <Route index element={<Navigate to="dashboard" />} />
