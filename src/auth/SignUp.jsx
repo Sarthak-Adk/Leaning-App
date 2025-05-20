@@ -1,19 +1,21 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import { IoMdArrowBack } from "react-icons/io";
 
 const SignUp = () => {
   return (
     <div  className="min-h-screen w-full bg-cover bg-no-repeat bg-fixed flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(/src/assets/LandingPageBG.jpg)` }}>
     
-        <div className="back-button bg-white">
-        <Link to="/landingpage">
-            <button >
-Back
-            </button>
-            </Link>
-        </div>
+         <div >
+                      <Link to="/landingpage">
+                          <button  className="absolute top-4 left-4 p-2 bg-gray-200 rounded-full hover:bg-gray-300">
+              <IoMdArrowBack />
+                          </button>
+                          </Link>
+                          </div>
       <div className="flex w-[800px] bg-white rounded-lg shadow-lg overflow-hidden">
+        
         {/* Left Side - Welcome Back Section */}
         <div className="w-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white flex flex-col items-center justify-center p-10">
           <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
@@ -29,6 +31,7 @@ Back
 
         {/* Right Side - Create Account Form */}
         <div className="w-1/2 p-10">
+        
           <h2 className="text-2xl font-bold mb-6">Create Account</h2>
           <div className="flex space-x-3 mb-4">
             <button className="p-2 border rounded-full hover:bg-gray-200">G+</button>

@@ -7,8 +7,8 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
-import LogIn from "./Pages/LogIn";
-import SignUp from "./Pages/SignUp";
+import LogIn from "./auth/LogIn";
+import SignUp from "./auth/SignUp";
 
 
 

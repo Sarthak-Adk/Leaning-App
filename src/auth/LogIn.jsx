@@ -1,20 +1,22 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { IoMdArrowBack } from "react-icons/io";
 
 const LogIn = () => {
   return (
     <div  className="min-h-screen w-full bg-cover bg-no-repeat bg-fixed flex flex-col items-center justify-center"
     style={{ backgroundImage: `url(/src/assets/LandingPageBG.jpg)` }}>
-         <div className="back-button  bg-white">
-              <Link to="/landingpage">
-                  <button  >
-      Back
-                  </button>
-                  </Link>
-                  </div>
+        
       <div className="flex w-[800px] bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Left Side - Sign In Form */}
         <div className="w-1/2 p-10">
+         <div >
+              <Link to="/landingpage">
+                  <button  className="absolute top-4 left-4 p-2 bg-gray-200 rounded-full hover:bg-gray-300">
+      <IoMdArrowBack />
+                  </button>
+                  </Link>
+                  </div>
           <h2 className="text-2xl font-bold mb-6">Sign In</h2>
           <div className="flex space-x-3 mb-4">
             <button className="p-2 border rounded-full hover:bg-gray-200">G+</button>
